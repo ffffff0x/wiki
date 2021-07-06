@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>bo0s'WiKi 🌹</title>
-  <link rel="icon" href="https://cdn.jsdelivr.net/gh/wugenqiang/StaticRepo/images/favicon.ico">
+  <link rel="icon" href="./morty.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <!-- Adsense 资源投放 -->
-  <script data-ad-client="ca-pub-1890271224952559" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- <script data-ad-client="ca-pub-1890271224952559" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
 
   <!-- 谷歌站点收录 -->
   <meta name="google-site-verification" content="qTFCf1hJ275saQ7H1kin5t2DVpznBKAj0Gi50XMOVMo" />
@@ -26,6 +26,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/css/friends-link.css">
   <!-- 自定义特色样式：by myself -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/css/me.css">
+  <!-- 目录折叠样式 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
 
   <style>
 
@@ -359,13 +361,13 @@
       nameLink: 'https://wiki.bo0s.com/',
       repo: 'ffffff0x/wiki',
       themeColor: '#007be8', // 主题颜色
-      //loadSidebar: true,//_sidebar.md如果为真，则从_sidebar.md文件加载边栏，否则从指定的路径加载
+      loadSidebar: true,//_sidebar.md如果为真，则从_sidebar.md文件加载边栏，否则从指定的路径加载
       auto2top: true,  //当路线改变时,滚动到屏幕的顶部
       loadNavbar: true,//_navbar.md如果为真，则从_navbar.md文件加载navbar ，否则从指定的路径加载
       mergeNavbar: true,//Navbar将在小屏幕上与侧边栏合并
       executeScript: true,//执行页面上的脚本。只解析第一个脚本标记（演示）。如果存在Vue，则默认开
       maxLevel: 6,//最大的内容表级别
-      //subMaxLevel: 6,//在自定义边栏中添加目录（TOC)
+      subMaxLevel: 3,//在自定义边栏中添加目录（TOC)
       externalLinkTarget: '_blank', //外链打开方式：_blank表示在新标签页中打开
       coverpage: true,
       onlyCover: true,
@@ -440,6 +442,7 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/search.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 
   <!-- 支持 DOT 语言 -->
   <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/viz.js"></script>
@@ -510,8 +513,7 @@
   <script>
     document.body.oncopy = function () {
      swal("复制成功 🎉",
-             "若要转载或引用请务必保留原文链接，并申明来源。如果你觉得本仓库不错，那就来 GitHub 给个 Star 吧 😊   - by 吴跟强",
-             "success"); };
+          "by - hitman"); };
   </script>
 
   <!-- 添加页脚 -->
